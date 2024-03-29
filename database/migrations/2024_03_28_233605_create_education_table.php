@@ -13,13 +13,17 @@ return new class extends Migration
     {
         Schema::create('education', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('instiute');
+            $table->date('start_year')->nullable();
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->date('end_year')->nullable()->default(now());
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('education');

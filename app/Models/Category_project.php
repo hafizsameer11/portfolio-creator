@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class Category_project extends Model
 {
     use HasFactory;
-    public function category(){
-        return $this->belongsToMany(Project::class,'category_projects');
-    }
-
-
 }

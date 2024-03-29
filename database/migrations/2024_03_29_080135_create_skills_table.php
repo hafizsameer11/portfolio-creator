@@ -11,17 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('experiences', function (Blueprint $table) {
+        Schema::create('skills', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('company');
-            $table->string('role')->nullable();
-            $table->text('description');
-            $table->string('working_time')->nullable();
             $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
-
-            $table->dateTime('start_at') -> nullable() -> comment("Start date of experience");
-            $table->dateTime('end_at')-> nullable();
+            $table->string('title');
+            $table->string('percentage');
             $table->timestamps();
         });
     }
@@ -31,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('experiences');
+        Schema::dropIfExists('skills');
     }
 };
