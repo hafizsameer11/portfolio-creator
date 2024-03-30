@@ -21,8 +21,11 @@
     <link href="{{asset('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('admin/assets/plugins/sweet-alert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('admin/assets/plugins/alertify/css/alertify.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('admin/assets/plugins/dropzone/min/dropzone.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('admin/assets/css/icons.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('admin/assets/css/style.css')}}" rel="stylesheet" type="text/css" />
+
+    <meta name="csrf-token" content="{{csrf_token()}}" />
 </head>
 <body class="fixed-left">
     <!-- Loader -->

@@ -24,8 +24,10 @@
 <!-- App js -->
 <script src="{{asset('admin/assets/js/app.js')}}"></script>
 <script src="{{asset('admin/assets/plugins/alertify/js/alertify.js')}}"></script>
+<script src="{{asset('admin/assets/plugins/dropzone/min/dropzone.min.js')}}"></script>
 <script src="{{asset('admin/assets/pages/alertify-init.js')}}"></script>
 <script src="{{asset('admin/assets/plugins/sweet-alert2/sweetalert2.min.js')}}"></script>
 <script src="{{asset('admin/assets/pages/sweet-alert.init.js')}}"></script>
+
 </body>
 </html>

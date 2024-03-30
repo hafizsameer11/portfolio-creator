@@ -7,5 +7,5 @@
     @yield('main-section')
 </div>
 @endif
-
 @include('admin.layouts.scripts')
+@yield('custom-script')
